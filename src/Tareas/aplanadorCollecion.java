@@ -10,7 +10,7 @@ private int longitud;
 public static String aplanarCollection (List<String>listaEntrada, int longitud){
     String listaSalida = listaEntrada.stream()
             .map(x -> x.toString())
-            .filter(x -> x.length()> 3)
+            .filter(x -> x.length()> longitud)
             .collect(Collectors.joining( ", "));
     return listaSalida;
 }

@@ -52,6 +52,10 @@ public class Main {
         //Acá llamo a la clase conversorStrings
         listadoMayúscula = Tareas.conversorStrings.convertirString(listadoIngresado);
         System.out.println(listadoMayúscula);
+        //ACÁ LLAMO AL MÉTODO PARA APLANAR, ASIGNADO ARBITRARIAMENTE LA LONGITUD DE LA LISTA COMO
+        //EL INT FILTRO QUE VA A DETERMINAR CUÁNTOS CARACTERES MÍNIMOS DEBE TENER LA PALABRA:
+        //SI SE INGRESAN 7 STRINGS SEPARADOS POR COMAS, EL MÉTODO SÓLO DEVOLVERÁ UN LISTADO CON PALABRAS
+        //DE MÁS DE 7 CARACTERES.
         String listPlana = aplanadorCollecion.aplanarCollection(listadoMayúscula, listadoIngresado.size());
         System.out.println(listPlana);
     }
